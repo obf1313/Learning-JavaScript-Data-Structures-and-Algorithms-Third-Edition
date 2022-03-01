@@ -8,7 +8,7 @@ function findValues(n, capacity, kS) {
       //  item ' + i + ' can be part of solution w,v: ' + weights[i - 1] + ',' + values[i - 1]
       //  );
       i--;
-      k -= kS[i][k];
+      if (i > 0) k -= kS[i][k];
     } else {
       i--;
     }
